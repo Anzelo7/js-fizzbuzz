@@ -29,9 +29,9 @@ let squareIndexcinque = squareIndex * 5
 
 switch (multiplisquareIndex) {
     case squareIndextre:
-        element.src.div = 'Fizz'
+        documet.getElementById('grid').src = 'Fizz'
         break;
     case squareIndexcinque:
-        element.src.div = 'Buzz'
+        documet.getElementById('grid').src = 'Buzz'
         break;
 }
