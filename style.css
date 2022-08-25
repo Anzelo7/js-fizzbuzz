@@ -1,0 +1,42 @@
+/* generics */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* utilities */
+
+/* content */
+.list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+#grid>div {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.bg-green {
+    background-color: greenyellow;
+}
+
+.big {
+    font-size: 2rem;
+}
