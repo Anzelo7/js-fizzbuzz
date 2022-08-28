@@ -13,30 +13,29 @@ body {
 /* utilities */
 
 /* content */
-.list {
+
+#container {
     display: flex;
-    list-style-type: none;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1000px;
-}
-
-#grid>div {
+.square {
+    border: 2px solid black;
     width: 100px;
     height: 100px;
-    padding: 5px;
-    border: 1px solid black;
 }
 
-.bg-green {
+.Fizz {
+    background-color: aqua;
+    color: black;
+}
+
+.Buzz {
     background-color: greenyellow;
+    color: black;
 }
 
-.big {
-    font-size: 2rem;
+.FizzBuzz {
+    background-color: gold;
+    color: #999;
 }

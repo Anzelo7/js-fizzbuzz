@@ -1,37 +1,36 @@
 console.log('JS GOD')
-const grid = document.getElementById('grid');
 
-for (let squareIndex = 1; squareIndex <= 100; squareIndex++) {
+const containerHTMLElement = document.getElementById('container');
+
+// ciclare i numeri da 1 a 100
+for (let number = 1; number <= 100; number++) {
+
+
+    // concateno a text Fizz e/o Buzz se divisibile per 3 e/o per 5
+    let text = '';
+    if (number % 3 === 0) {
+        text += 'Fizz';
+    }
+
+    if (number % 5 === 0) {
+        text += 'Buzz';
+    }
+
+    // stampo number se text non ha contenuto
+
+    // è uguale all'if sopra -> condizione ? se vero : se falso
+    const result = text.length > 0 ? text : number;
+    console.log(result);
+
+    // BONUS 1 - creo elementi
     const element = document.createElement('div');
 
-    element.append(squareIndex.toFixed());
-    element.className = 'bg-green big';
-    //   element.classList.add('bg-green');
+    element.className = 'square';
+    if (text.length > 0) {
+        element.classList.add(text);
+    }
 
-    element.style.textAlign = 'center';
-    element.style.display = 'flex';
-    element.style.flexDirection = 'column';
-    element.style.justifyContent = 'center';
+    element.append(result); // è analogo a scriver element.innerHTML = result;   
 
-
-
-    element.addEventListener('mouseleave', function () {
-        console.log('esco da ' + squareIndex);
-        element.style.backgroundColor = 'greenyellow';
-    });
-
-
-    grid.append(element);
-}
-
-let squareIndextre = squareIndex * 3
-let squareIndexcinque = squareIndex * 5
-
-switch (multiplisquareIndex) {
-    case squareIndextre:
-        documet.getElementById('grid').src = 'Fizz'
-        break;
-    case squareIndexcinque:
-        documet.getElementById('grid').src = 'Buzz'
-        break;
+    containerHTMLElement.append(element);
 }
